@@ -1,0 +1,13 @@
+spring:
+  kafka:
+    client-id: test-app
+    bootstrap-servers:
+      - localhost:9092
+    template:
+      default-topic: test
+---
+
+kafka:
+  topic:
+    input: test
+    output: test2
